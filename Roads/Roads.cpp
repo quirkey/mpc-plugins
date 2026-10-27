@@ -1,7 +1,7 @@
 // Roads — MDA ePiano instrument for MPC OS
 //
 // Ported from the Daisy Roads firmware (Roads/Roads.cpp): the same 33-keygroup ePiano sample voices with the tine /
-// reed oscillator, Rhodes / Wurli / Clav characters, treble boost, pan / tremolo LFO, the note-triggered envelope
+// reed oscillator, SeventyThree / Wurli / Clav characters, treble boost, pan / tremolo LFO, the note-triggered envelope
 // filter, chorus and the 3-band EQ. Left out on purpose: the tape delay, reverb and expression-pedal wah (MPC has its
 // own delay and reverb, and nothing to plug a pedal into), and the cabinet IR (1.1 had one; a cab / amp plugin on the
 // track does it better).
@@ -12,7 +12,7 @@
 //
 // Params (params.json order — never reorder, MPC projects save by index):
 //   0 Level      output level (dB)
-//   1 Character  Rhodes / Wurli / Clav
+//   1 Character  SeventyThree / Wurli / Clav (the option names; SeventyThree is the tine piano)
 //   2 Decay      3 Release   4 Hardness (keygroup offset)   5 Treble   6 Drive (the firmware's OD)
 //   7 Speed      LFO rate (0.3 .. 8 Hz)   8 Pan / Trem (old: -100 pan .. +100 tremolo; the firmware's DEPTH around 0.5)
 //   9 Chorus

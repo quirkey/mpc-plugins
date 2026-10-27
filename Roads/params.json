@@ -1,6 +1,6 @@
 [
  {"key": "level", "name": "Level", "unit": "dB", "min": -24, "max": 6, "default": 0},
- {"key": "character", "name": "Character", "options": ["Rhodes", "Wurli", "Clav"], "default": "Rhodes"},
+ {"key": "character", "name": "Character", "options": ["SeventyThree", "Wurli", "Clav"], "default": "SeventyThree"},
  {"key": "decay", "name": "Decay", "min": 0, "max": 100, "default": 50},
  {"key": "release", "name": "Release", "min": 0, "max": 100, "default": 50},
  {"key": "hardness", "name": "Hardness", "min": 0, "max": 100, "default": 50},
