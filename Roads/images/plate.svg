@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="300" viewBox="0 0 600 300" preserveAspectRatio="none">
+  <!-- brushed aluminium faceplate (a Suitcase's control panel): horizontal grain, a soft sheen, a dark bevelled edge.
+       Stretched to each frame, so the grain is horizontal-only and survives the stretch. -->
+  <defs>
+    <linearGradient id="alu" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d9dbdd"/>
+      <stop offset="0.45" stop-color="#c4c6c8"/>
+      <stop offset="0.55" stop-color="#bdbfc2"/>
+      <stop offset="1" stop-color="#a9acaf"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="0.35" stop-color="#fff" stop-opacity="0.16"/>
+      <stop offset="0.5" stop-color="#fff" stop-opacity="0.02"/>
+      <stop offset="0.75" stop-color="#fff" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="brush" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.004 0.9" numOctaves="3" seed="3" result="n"/>
+      <feColorMatrix in="n" type="matrix"
+        values="0 0 0 0 0.5  0 0 0 0 0.5  0 0 0 0 0.52  0 0 0 0.5 -0.1"/>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+  </defs>
+  <rect x="0" y="0" width="600" height="300" rx="4" fill="#0a0a0a"/>
+  <rect x="2" y="2" width="596" height="296" rx="3" fill="url(#alu)"/>
+  <rect x="2" y="2" width="596" height="296" rx="3" fill="#888" filter="url(#brush)" opacity="0.55"/>
+  <rect x="2" y="2" width="596" height="296" rx="3" fill="url(#sheen)"/>
+  <rect x="2.5" y="2.5" width="595" height="295" rx="3" fill="none" stroke="#f2f3f4" stroke-opacity="0.55" stroke-width="1"/>
+</svg>

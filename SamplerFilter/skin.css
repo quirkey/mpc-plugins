@@ -1,0 +1,24 @@
+/* SamplerFilter: Akai-grey page (as Breaks), taper knobs with an S950-green value arc.
+ * Loaded after the toolkit's tools/html_art/default.css (layout.conf art_css=); colours come from layout.conf's
+ * theme_ lines, sizes and the few fixed colours are here. */
+:root {
+  --title-size: 28px;
+  --label-size: 19px;
+  --seg-size: 19px;
+  --button-size: 22px;
+  --sheen: 0.06;
+  --shadow: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.35));
+}
+
+/* the value arc's track: a dark groove, so the green reads on the light page */
+.knob-track { stroke: #2e2e2e; }
+
+/* frames: a slightly darker grey panel, like the S950's front-panel sections */
+.frame-border { fill: var(--panel); stroke: var(--line); stroke-width: 2; }
+.frame-title { letter-spacing: 0.08em; }
+
+/* segments: light grey keys with dark text (theme_seg_inactive); the selected one green (theme_seg_active) */
+.seg-tx { letter-spacing: 0.04em; fill: #1c1c1c; }
+
+/* the taper's arc (r + 2.5, r/10 wide) and drop shadow reach the edge of its 2r+10 frame: draw it a little smaller */
+.look-taper { transform: scale(0.92); transform-origin: center; transform-box: fill-box; }

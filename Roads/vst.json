@@ -1,0 +1,42 @@
+{
+  "name": "Roads",
+  "vendor": "quirkey",
+  "about": "An electric piano (tine, reed and clav characters) with tremolo / auto-pan, chorus, an envelope filter and EQ.",
+  "uid": "QkRd",
+  "version": 1000,
+  "so": "roads.so",
+  "params": "params.json",
+  "layout": "layout.conf",
+  "art": "html",
+  "defines": {
+    "MODULE_SUBDIR": "\"samples\""
+  },
+  "build": {
+    "root": "..",
+    "sources": [
+      "Roads/Roads.cpp",
+      "DaisySP/Source/Effects/chorus.cpp",
+      "DaisySP/Source/Filters/svf.cpp"
+    ],
+    "cflags": [
+      "-include",
+      "common/daisysp_armv7a.h",
+      "-IDaisySP/Source",
+      "-IDaisySP/Source/Utility",
+      "-IDaisySP/Source/Effects",
+      "-IDaisySP/Source/Filters"
+    ],
+    "cflags_arm": [
+      "-mcpu=cortex-a17",
+      "-mfpu=neon-vfpv4",
+      "-ffast-math",
+      "-fno-jump-tables"
+    ],
+    "libs": [
+      "-lm"
+    ]
+  },
+  "extra": [
+    "Roads/epiano_samples.bin:samples/epiano_samples.bin"
+  ]
+}

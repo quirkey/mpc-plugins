@@ -1,0 +1,6 @@
+[submodule "mpc-vst-plugins"]
+	path = mpc-vst-plugins
+	url = https://github.com/sd88me/mpc-vst-plugins
+[submodule "DaisySP"]
+	path = DaisySP
+	url = https://github.com/electro-smith/DaisySP

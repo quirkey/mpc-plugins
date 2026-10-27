@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="628" viewBox="0 0 1280 628">
+  <!-- black tolex: a near-black base pebbled with a tight pattern of slightly lighter bumps (a pattern, not noise:
+       the renderer drew feTurbulence as grey blotches) -->
+  <defs>
+    <pattern id="pebble" width="7" height="6" patternUnits="userSpaceOnUse">
+      <rect width="7" height="6" fill="#121212"/>
+      <circle cx="1.8" cy="1.6" r="1.3" fill="#1c1b1b"/>
+      <circle cx="5.3" cy="4.4" r="1.3" fill="#1a1919"/>
+      <circle cx="5.6" cy="1.1" r="0.7" fill="#0b0b0b"/>
+      <circle cx="2.2" cy="4.8" r="0.7" fill="#0b0b0b"/>
+    </pattern>
+    <radialGradient id="vignette" cx="50%" cy="45%" r="75%">
+      <stop offset="0.6" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.5"/>
+    </radialGradient>
+  </defs>
+  <rect width="1280" height="628" fill="url(#pebble)"/>
+  <rect width="1280" height="628" fill="url(#vignette)"/>
+</svg>

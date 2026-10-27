@@ -1,0 +1,23 @@
+/* Roads: a Rhodes Suitcase front panel. Brushed aluminium plates (images/plate.svg) on black tolex, black screen-printed
+ * lettering, moog-look knobs (black skirt, metal cap), ivory / black key-style switches.
+ * Loaded after the toolkit's tools/html_art/default.css (layout.conf art_css=); colours come from layout.conf's
+ * theme_ lines, sizes and the few fixed colours are here. */
+:root {
+  --title-size: 22px;
+  --label-size: 19px;
+  --seg-size: 20px;
+  --sheen: 0.04;
+  --shadow: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.45));
+}
+
+/* faceplate lettering: small black capitals, widely spaced, as screen-printed on the panel */
+.frame-title { fill: #161616; font-weight: 700; letter-spacing: 0.22em; }
+.frame-rule { stroke: #161616; stroke-opacity: 0.35; }
+.text { fill: #161616; letter-spacing: 0.16em; }
+
+/* key-style switches: ivory keys, the selected one black with ivory text; a thin dark gap between keys */
+.seg-bg { stroke: #0b0b0b; stroke-width: 1.5; filter: drop-shadow(0 2px 1.5px rgba(0, 0, 0, 0.4)); }
+.seg-tx { font-weight: 700; letter-spacing: 0.12em; }
+
+/* the knob's shadow falls on the plate, not on tolex: keep it soft */
+.look-body { filter: drop-shadow(0 3px 2.5px rgba(0, 0, 0, 0.5)); }

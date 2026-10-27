@@ -1,0 +1,29 @@
+{
+  "name": "SamplerFilter",
+  "vendor": "quirkey",
+  "about": "A vintage-sampler 6-pole low-pass filter with bit and sample-rate reduction.",
+  "uid": "QkSf",
+  "version": 1000,
+  "so": "samplerfilter.so",
+  "params": "params.json",
+  "layout": "layout.conf",
+  "art": "html",
+  "skin_post": "tools/skin_post.py",
+  "effect": true,
+  "build": {
+    "root": "..",
+    "sources": [
+      "SamplerFilter/SamplerFilter.cpp"
+    ],
+    "cflags": [],
+    "cflags_arm": [
+      "-mcpu=cortex-a17",
+      "-mfpu=neon-vfpv4",
+      "-ffast-math",
+      "-fno-jump-tables"
+    ],
+    "libs": [
+      "-lm"
+    ]
+  }
+}

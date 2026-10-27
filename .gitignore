@@ -1,0 +1,11 @@
+.DS_Store
+.claude/
+.vscode/
+
+# build output (build.sh) and release zips (build.sh release)
+*/build/
+*/dist/
+
+# Breaks' own breaks/ folder is the user's (vst.json "user_data"): the curated set is staged by
+# Breaks/tools/stage_classics.sh for testing and installing, never committed or shipped
+Breaks/breaks/

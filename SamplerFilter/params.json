@@ -1,0 +1,11 @@
+[
+ {"key": "level", "name": "Level", "unit": "dB", "min": -24, "max": 6, "default": 0},
+ {"key": "filter", "name": "Filter", "min": 0, "max": 100, "default": 100, "dynamic_display": true},
+ {"key": "bits", "name": "Bits (old)", "min": 4, "max": 16, "default": 16, "display": "int", "dynamic_display": true},
+ {"key": "rate", "name": "Rate (old)", "unit": "kHz", "min": 2, "max": 44.1, "default": 44.1, "dynamic_display": true},
+ {"key": "track", "name": "Track", "options": ["Off", "On"], "default": "Off"},
+ {"key": "drive", "name": "Drive", "min": 0, "max": 100, "default": 0},
+ {"key": "mix", "name": "Mix", "min": 0, "max": 100, "default": 100},
+ {"key": "bits_step", "name": "Bits", "options": ["4", "6", "8", "10", "12", "Off"], "default": "Off"},
+ {"key": "rate_step", "name": "Rate", "options": ["4", "8", "11", "16", "22", "26", "32", "Off"], "default": "Off"}
+]
