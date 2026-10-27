@@ -22,7 +22,7 @@ CFG="$HERE/$PLUG/vst.json"
 # For the catalog manifest in release zips (mpc-vst-plugins docs/RELEASING.md): the repo and its licence (an SPDX id,
 # matching LICENSE). Without a licence the zip still builds, but isn't listable.
 REPO_SLUG="quirkey/mpc-plugins"
-SPDX=""
+SPDX="MIT"
 
 render() {
   shift 2
