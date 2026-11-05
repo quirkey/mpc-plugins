@@ -9,3 +9,4 @@
 # Breaks' own breaks/ folder is the user's (vst.json "user_data"): the curated set is staged by
 # Breaks/tools/stage_classics.sh for testing and installing, never committed or shipped
 Breaks/breaks/
+__pycache__/
