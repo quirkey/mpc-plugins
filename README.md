@@ -1,8 +1,8 @@
 # mpc-plugins
 
 Plugins that run **inside** an MPC / Force in standalone mode (MPC OS's own VST host, on the device's ARM CPU), built
-with [sd88me/mpc-vst-plugins](https://github.com/sd88me/mpc-vst-plugins)
-([guide](https://sd88me.github.io/mpc-vst-plugins/build.html)), pinned here as the `mpc-vst-plugins/` submodule. The DSP
+with [open-mpc/mpc-vst-plugins](https://github.com/open-mpc/mpc-vst-plugins)
+([guide](https://open-mpc.github.io/build.html)), pinned here as the `mpc-vst-plugins/` submodule. The DSP
 started life as firmware for [Daisy](https://electro-smith.com/daisy) boards.
 
 | Plugin | Kind | What it is |
@@ -25,7 +25,7 @@ scp -r /tmp/Roads-1.2.1 root@<mpc-ip>:/tmp/
 ssh root@<mpc-ip> sh /tmp/Roads-1.2.1/install.sh     # stops MPC, backs up MPC.settings, installs, restarts
 ```
 
-Or drop the zip into the [MPC plugin installer app](https://github.com/sd88me/mpc-vst-plugins/releases/latest). Then
+Or drop the zip into the [MPC plugin installer app](https://github.com/open-mpc/mpc-vst-plugins/releases/latest). Then
 add the plugin to a track from the plugin browser. The zip's `INSTALL.md` has the details.
 
 ## Building
