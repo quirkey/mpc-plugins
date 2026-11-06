@@ -1,8 +1,8 @@
 plugin /tmp/samplerfilter.so: effect, 9 params, open 0.1 ms; block 128 @ 44100 Hz = 2902 us budget
 stage               mean%     p99%     max%  threads%    peak
-idle                  1.2      1.5      2.0       0.0    0.25
+idle                  1.2      1.5      1.7       0.0    0.25
 audio in              1.2      1.4      1.6       0.0    0.25
-q-link sweep          3.5      4.1      4.5      -0.0    0.64
-release tail          3.4      3.7      3.8       0.0    0.33
-worst p99 4.1%, worst block 4.5%, background threads up to 0.0% of a core -> PASS
-{"plugin":"/tmp/samplerfilter.so","instrument":0,"open_ms":0.1,"p99_pct":4.1,"max_pct":4.5,"threads_pct":0.0,"verdict":"PASS"}
+q-link sweep          3.5      4.1      4.3      -0.0    0.64
+release tail          3.4      3.7      3.9       0.0    0.33
+worst p99 4.1%, worst block 4.3%, background threads up to 0.0% of a core -> PASS
+{"plugin":"/tmp/samplerfilter.so","instrument":0,"open_ms":0.1,"p99_pct":4.1,"max_pct":4.3,"threads_pct":0.0,"verdict":"PASS"}

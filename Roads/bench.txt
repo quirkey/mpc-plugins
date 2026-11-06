@@ -1,12 +1,14 @@
 Roads: epiano_samples.bin not found in /tmp/samples
-plugin /tmp/roads.so: instrument, 26 params, open 0.7 ms; block 128 @ 44100 Hz = 2902 us budget
+plugin /tmp/roads.so: instrument, 26 params, open 0.4 ms; block 128 @ 44100 Hz = 2902 us budget
+  2 one-shot trigger(s) excluded from the sweep, fired in their own stage
 stage               mean%     p99%     max%  threads%    peak
-idle                  0.7      1.0      1.9       0.0    0.00
+idle                  0.7      1.0      1.4       0.0    0.00
 1 voices              1.0      1.3      1.5       0.0    0.15
 4 voices              1.6      2.1      2.3       0.0    0.45
-8 voices              2.3      3.5      3.8       0.0    0.63
-16 voices             2.9      3.4      3.7       0.0    0.93
-q-link sweep          5.8     14.6     15.1       0.0    1.00
-release tail          1.9      4.4      4.9       0.0    0.21
-worst p99 14.6%, worst block 15.1%, background threads up to 0.0% of a core -> PASS
-{"plugin":"/tmp/roads.so","instrument":1,"open_ms":0.7,"p99_pct":14.6,"max_pct":15.1,"threads_pct":0.0,"verdict":"PASS"}
+8 voices              2.3      3.1      3.6       0.0    0.63
+16 voices             2.9      3.2      3.7       0.0    0.93
+q-link sweep          6.1     14.7     15.2      -0.0    1.00
+release tail          2.9      5.3      5.5       0.0    0.17
+trigger fire          1.8      2.1      2.4       0.0    0.00
+worst p99 14.7%, worst block 15.2%, background threads up to 0.0% of a core, trigger max 2.4% of a block -> PASS
+{"plugin":"/tmp/roads.so","instrument":1,"open_ms":0.4,"p99_pct":14.7,"max_pct":15.2,"threads_pct":0.0,"verdict":"PASS","triggers":2,"trigger_max_pct":2.4}

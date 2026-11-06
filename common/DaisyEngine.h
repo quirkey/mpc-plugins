@@ -23,6 +23,7 @@
 #include <cstdio>
 #include <cstdlib>
 #include <cstring>
+#include <atomic>
 #include <new>
 
 extern "C" {
@@ -128,11 +129,24 @@ inline float MpcParamClamp(int i, float v)
     return v < p.min ? p.min : v > p.max ? p.max : v;
 }
 
+// The wrapper's display_rev poll reads every param in index order on the audio thread (vst2_wrap.c get_norm): a plain
+// scan made that 172 x ~86 strcmp for Breaks, ~13% of one block on the device. So the slot after the last hit is
+// tried first. The hint is shared by every instance and thread; a stale one only costs the scan.
 inline int MpcParamIndex(const char *key)
 {
+    static std::atomic<int> hint{0};
+    int                     h = hint.load(std::memory_order_relaxed);
+    if(h >= 0 && h < NPARAMS && !strcmp(PARAMS[h].key, key))
+    {
+        hint.store(h + 1, std::memory_order_relaxed);
+        return h;
+    }
     for(int i = 0; i < NPARAMS; i++)
         if(!strcmp(PARAMS[i].key, key))
+        {
+            hint.store(i + 1, std::memory_order_relaxed);
             return i;
+        }
     return -1;
 }
 
