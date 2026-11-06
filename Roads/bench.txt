@@ -1,0 +1,12 @@
+Roads: epiano_samples.bin not found in /tmp/samples
+plugin /tmp/roads.so: instrument, 26 params, open 0.7 ms; block 128 @ 44100 Hz = 2902 us budget
+stage               mean%     p99%     max%  threads%    peak
+idle                  0.7      1.0      1.9       0.0    0.00
+1 voices              1.0      1.3      1.5       0.0    0.15
+4 voices              1.6      2.1      2.3       0.0    0.45
+8 voices              2.3      3.5      3.8       0.0    0.63
+16 voices             2.9      3.4      3.7       0.0    0.93
+q-link sweep          5.8     14.6     15.1       0.0    1.00
+release tail          1.9      4.4      4.9       0.0    0.21
+worst p99 14.6%, worst block 15.1%, background threads up to 0.0% of a core -> PASS
+{"plugin":"/tmp/roads.so","instrument":1,"open_ms":0.7,"p99_pct":14.6,"max_pct":15.1,"threads_pct":0.0,"verdict":"PASS"}

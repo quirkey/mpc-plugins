@@ -11,7 +11,7 @@ stays there. See README.md for the build commands and layout. Requires Docker.
 - DaisySP users need `"-include", "common/daisysp_armv7a.h"` first in vst.json cflags (ARMv8 `vmaxnm` in `dsp.h` is a
   SIGILL on the Cortex-A17; QEMU hides it). Roads also builds with `-fno-jump-tables`.
 - Roads' voices are a copy of the DaisyProjects Roads firmware: voice fixes go into both by hand.
-- The device: `ssh mpc` (MPC One+, Gen1, MPC OS 3.9.1); plugins in `/media/MPCDATA/Synths/`; crash logs
+- The device: `ssh mpc` (MPC One+, Gen1, MPC OS 3.10); plugins in `/media/MPCDATA/Synths/`; crash logs
   `journalctl -u acvs`. Installing restarts MPC: ask first. Batch: stop `acvs`, `install.sh -y -n -t
   /media/MPCDATA/Synths` per zip, start `acvs`.
 - Breaks: never ship or commit break recordings (`breaks/` is the user's folder); `/media/MPCDATA/Breaks` on the device

@@ -1,5 +1,7 @@
 # Roads
 
+![Roads on an MPC One+](../docs/roads.png)
+
 A 16-voice electric piano instrument for MPC OS: Paul Kellett's mda ePiano (33 sampled keygroups and its tine / reed
 modelling), with tine, reed and clav characters, treble and drive, tremolo / auto-pan, chorus, a note-triggered envelope
 filter and a 3-band EQ. Ported from the Roads firmware for Daisy, without its delay, reverb, pedal wah and cabinet IR:

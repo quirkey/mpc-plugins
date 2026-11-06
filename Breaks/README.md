@@ -1,5 +1,7 @@
 # Breaks
 
+![Breaks on an MPC One+](../docs/breaks.png)
+
 An instrument for MPC OS that plays a drum break in time with the song while the transport runs: no notes needed. The
 break is cut into 16th-note slices and each slice is retriggered on the song's 16th grid, so it always follows MPC's
 tempo. It runs through its whole length whatever the sequence's loop: a 4-bar break over a 1-bar loop keeps going bar 1,

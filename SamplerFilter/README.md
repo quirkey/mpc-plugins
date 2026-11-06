@@ -1,5 +1,7 @@
 # SamplerFilter
 
+![SamplerFilter on an MPC One+](../docs/samplerfilter.png)
+
 A track effect for MPC OS modelled on the filter and grit of late-80s rack samplers: a 6-pole (36 dB/octave) Butterworth
 low-pass with no resonance, which darkens and thickens rather than squelching, plus the bit-depth and sample-rate
 reduction from [Breaks](../Breaks).
