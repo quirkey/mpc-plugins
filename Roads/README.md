@@ -8,9 +8,9 @@ use MPC's own delay and reverb, and a cab / amp plugin on the track.
 ## Pages
 
 **PIANO**
-- **Character**: the voice: SeventyThree (tines, the classic electric piano bell), Wurli (reeds, a buzzier, more nasal
+- **Character**: the voice: SeventyThree (tines, the classic electric piano bell), Reed (reeds, a buzzier, more nasal
   tone) or Clav (bright and percussive). Only the names changed in this repo (1.0 to 1.2 called the first one by the
-  maker's name), so projects load as before.
+  maker's name, and the second "Wurli"), so projects load as before.
 - **Voice**: Decay, Release, Hardness (shifts which sample keygroups play: harder is brighter).
 - **Output**: Level.
 - **Tone**: Treble, Drive, then the EQ's Low, Mid and High (dB).
